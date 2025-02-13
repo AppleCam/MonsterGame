@@ -22,7 +22,9 @@ public class MonsterMain extends ApplicationAdapter {
         player = new Player(475, 475, 24);
         trap = new Trap(25, 25, 24);
         monster = new Monster(25, 25, 24);
-        walls = new Walls(50, 50);
+        gold = new Gold(10,10);
+
+
 
     }
 
