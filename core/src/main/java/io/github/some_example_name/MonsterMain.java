@@ -10,16 +10,21 @@ public class MonsterMain extends ApplicationAdapter {
     private Gold gold;
     private Trap trap;
     private Monster monster;
+    private Walls walls;
+    private WallGen;
     private boolean isGoldCollected;
     private boolean playerMoved = false; // Flag to track player movement
+
 
     @Override
     public void create() {
         grid = new Grid(10); // 10 by 10 grid
         player = new Player(475, 475, 24);
-        gold = new Gold(7,10); // Create 5 coins in a 10x10 grid
+        gold = new Gold(10,10); // Create 10 coins in a 10x10 grid
         trap = new Trap(25, 25, 24);
         monster = new Monster(25, 25, 24);
+        walls = new Walls(50, 50);
+
     }
 
     @Override
@@ -55,6 +60,7 @@ public class MonsterMain extends ApplicationAdapter {
         monster.move(player);
         monster.attack(player);
         gold.win();
+        walls.draw();
     }
 
     @Override

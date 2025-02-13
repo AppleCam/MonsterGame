@@ -48,10 +48,8 @@ public class Gold {
     public void draw() {
         shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
 
-
-
-        shapeRenderer.setColor(0.15f, 0.15f, 0.2f, 1f);
-        //shapeRenderer.setColor(Color.WHITE);
+        //shapeRenderer.setColor(0.15f, 0.15f, 0.2f, 1f);
+        shapeRenderer.setColor(Color.WHITE);
         for (Trap trap : traps) {
             // Draw traps as circles (invisible in the game but noted for development)
             trap.getBounds().setRadius(0); // Set radius to 0 for invisibility
