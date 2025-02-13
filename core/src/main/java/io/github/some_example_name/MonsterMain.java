@@ -11,7 +11,7 @@ public class MonsterMain extends ApplicationAdapter {
     private Trap trap;
     private Monster monster;
     private Walls walls;
-    private WallGen wallGen;
+    private WallGen wallgen;
     private boolean isGoldCollected;
     private boolean playerMoved = false; // Flag to track player movement
 
