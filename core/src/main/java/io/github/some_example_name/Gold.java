@@ -13,7 +13,7 @@ public class Gold {
     private ShapeRenderer shapeRenderer;
     private Random random;
     public int count = 0;
-    private int coinToWin = 100;
+    private int coinToWin = 10;
 
 
     public Gold(int numberOfCoins, int gridSize) {
@@ -93,7 +93,7 @@ public class Gold {
 
     public void win(){
         if (count == coinToWin) {
-            System.out.println("You win!");
+            System.out.println("Vous etes aussi habile qu'un elephant francais dans le tramway.");
             System.exit(0);
         }
     }
