@@ -27,7 +27,7 @@ public class Monster {
     public void attack(Player player) {
         if (player.getBounds().overlaps(getMBounds())){
             System.out.println("Con comme une valise sans poignee!!!");
-            System.exit(0);
+            System.exit(1);
         }
     }
 

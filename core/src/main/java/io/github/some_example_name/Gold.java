@@ -94,7 +94,7 @@ public class Gold {
     public void win(){
         if (count == coinToWin) {
             System.out.println("Vous etes aussi habile qu'un elephant francais dans le tramway.");
-            System.exit(0);
+            System.exit(1);
         }
     }
 
